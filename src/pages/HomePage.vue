@@ -1,29 +1,26 @@
 <script>
-
-
 export default {
   data() {
     return { 
-    };
-  },
-  methods: {
+      message: 'Laravel Boolfolio - API'
+    }
   }
 }
 </script>
 
 <template>
-  <main>
-    <router-view></router-view>
-  </main>
+  <div class="container text-center">
+    <h1>
+      {{ message }}
+    </h1>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-main {
-  background-color: $mainBgColor;
-  text-align: center;
-  padding: 20px 0;
-}
 
+h1 {
+  color: $mainColor;
+}
 </style>

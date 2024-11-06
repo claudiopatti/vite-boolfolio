@@ -10,9 +10,24 @@ export default {
 
 <template>
   <header>
-    <h1>
-      {{ message }}
-    </h1>
+
+    <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+        <router-link :to="{ name: 'home' }" class="nav-link">
+          HOME
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link :to="{ name: 'about' }" class="nav-link">
+          CHI SIAMO
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link :to="{ name: 'projects' }" class="nav-link">
+          PROGETTI
+        </router-link>
+      </li>
+    </ul>
   </header>
 </template>
 
