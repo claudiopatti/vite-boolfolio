@@ -70,6 +70,8 @@ export default {
 
 <template>
   <main>
+    <router-view></router-view>
+
     <div class="container">
       <div class="row">
         <div v-for="project in projects" :key="project.id" class="col-12 col-sm-12 col-md-6 col-lg-4 g-3">
