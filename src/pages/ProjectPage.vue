@@ -17,8 +17,13 @@ export default {
       axios
         .get(this.defaultUrl + '/' + this.$route.params.slug)
         .then((res) => {
-          this.project = res.data.project;
-          console.log(this.project);
+            this.project = res.data.project;
+            console.log(this.project);
+        })
+        .catch((err) => {
+          console.error(err);
+
+          this.$router.push({ name: 'not-found'});
         });
     },
   },
