@@ -55,6 +55,9 @@ export default {
                 <li v-for="technology in project.technologies" :key="technology.id" >{{ technology.name }}</li>
               </ul>
             </div>
+            <div>
+              <img class="w-100" :src="project.full_cover_url" :alt="project.name">
+            </div>
           </div>
         </div>
       </div>
